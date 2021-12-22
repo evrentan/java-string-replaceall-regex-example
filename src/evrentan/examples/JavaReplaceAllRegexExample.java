@@ -7,9 +7,11 @@ public class JavaReplaceAllRegexExample {
 
     public static void main(String[] args) {
         String initialString = "lorem1ipsum2giving3temp4code5examples6every7Wednesday";
+
         Pattern digitPattern = Pattern.compile("\\d+");
         Matcher matcher = digitPattern.matcher(initialString);
         String newString = matcher.replaceAll(" ");
+
         String regexLorem = "(lorem)";
         String regexIpsum = "(ipsum)";
         String regexTemp = "(temp)";
